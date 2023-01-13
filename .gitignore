@@ -12,7 +12,7 @@ env/
 venv/
 .venv/
 *env/
-
+migrations/
 ### Project specific ###
 settings_local.py
 

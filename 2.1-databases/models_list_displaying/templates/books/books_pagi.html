@@ -7,6 +7,7 @@
         <div class="header">
             <h1><a href="/books">Каталог</a></h1>
         </div>
+
         <div class="row">
             {% for book in books %}
             <div class="book col-md-4">
@@ -16,5 +17,14 @@
             </div>
             {% endfor %}
         </div>
+
+            {% if page.has_previous %}
+                <a href="{{ date_previous }}"> < {{ date_previous }}</a>
+            {% endif %}
+            {% if page.has_next %}
+                <a href="{{ date_next }}">{{ date_next }} > </a>
+            {% endif %}
+
     </div>
 {% endblock %}
+
